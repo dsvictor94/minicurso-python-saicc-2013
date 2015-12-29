@@ -2,415 +2,640 @@
 Google IO 2012/2013 HTML5 Slide Template
 
 Authors: Eric Bidelman <ebidel@gmail.com>
-         Luke Mahé <lukem@google.com>
+Luke Mahé <lukem@google.com>
 
 URL: https://code.google.com/p/io-2012-slides
 -->
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <!--This one seems to work all the time, but really small on ipad-->
-  <!--<meta name="viewport" content="initial-scale=0.4">-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" media="all" href="theme/css/default.css">
-  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
-  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
-</head>
-<body style="opacity: 0">
-
-<slides class="layout-widescreen">
-
-  <slide class="logoslide nobackground">
-    <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo.png"></span>
-    </article>
-  </slide>
-
-  <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-    <hgroup class="auto-fadein">
-      <h1 data-config-title><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
-      <p data-config-presenter><!-- populated from slide_config.json --></p>
-    </hgroup>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Bullets</h2>
-    </hgroup>
-    <article>
-      <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <!--This one seems to work all the time, but really small on ipad-->
+        <!--<meta name="viewport" content="initial-scale=0.4">-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" media="all" href="theme/css/default.css">
+        <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+        <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+        <link rel="stylesheet" media="all" href="font.css">
+        <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+    </head>
+    <body style="opacity: 0">
+        
+        <slides class="layout-widescreen">
+            
+            <slide class="logoslide nobackground">
+                <article class="flexbox vcenter">
+                    <span><img src="images/python-programming-language-logo.png"></span>
+                </article>
+            </slide>
+            
+            <slide class="title-slide segue nobackground">
+                <aside class="gdbar"><img src="images/python-icon.png"></aside>
+                <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+                <hgroup class="auto-fadein">
+                    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+                    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+                    <p data-config-presenter><!-- populated from slide_config.json --></p>
+                </hgroup>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>O que é programação</h2>
+                </hgroup>
+                <article class="flexbox vleft">
+                    <q  class="smaller">
+                        Programação é o processo de escrita, teste e manutenção de um programa de computador.
+                    </q>
+                    <div class="author">
+                        Wikipedia: <a href="http://pt.wikipedia.org/wiki/Programação">http://pt.wikipedia.org/wiki/Programação</a>
+                    </div>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Exemplo</h2>
+                </hgroup>
+                <article class="smaller">
+                    <pre class="prettyprint">
+chegou alguem?
+sim:
+    <b>está escuro?
+    sim:
+        liga a luz</b>
+    não:
+        recomece
+    não:
+recomece
 </pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
+                </article>
+            </slide>
+            
+            <slide hidden>
+                Hidden slides are left out of the presentation.
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Hello world</h2>
+                    <h3>enfim algo que funciona...</h3>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+<b>print &quot;Hello World!&quot;</b></pre>
+                    <pre class="fade prettyprint" data-lang="java">
+public class HelloWorldConsole {
+    public static void main(String args[]) {
+        <b>System.out.println(&quot;Hello World!&quot;);</b>
+    }
 }
 </pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
+                </article>
+            </slide>            
+            <slide>
+                <hgroup>
+                    <h2>Outros Exemplos</h2>
+                </hgroup>
+                <article class="build" >
+                    <p>Direcionando o ola!</p>
+                    <pre class="prettyprint" data-lang="python">
+# -*- coding: cp1252 -*-
+nome = <b>raw_input(&quot;informe seu nome: &quot;)</b>
+<b>if nome:</b>
+    print &quot;Ola &quot;+nome
+<b>else:</b>
+    print &quot;Ola anônimo&quot;
 </pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
+                    <p>Sendo insistente</p>
+                    <pre class="prettyprint" data-lang="python">
+nome = None
+<b>while not nome:</b>
+    nome = raw_input(&quot;informe seu nome: &quot;)
+print &quot;Ola, &quot+nome
 </pre>
-    </article>
-  </slide>
+                </article>
+            </slide>
+            <slide>
+                <article class="smaller build">
+                    <p>sendo insistente mas nem tanto</p>
+                    <pre class="prettyprint" data-lang="python">
+<b>for i in range(5):</b>
+  nome = raw_input(&quot;informe seu nome: &quot;)
+  if nome:
+     print &quot;Ola, &quot; + nome
+     <b>break</b>
+<b>else:</b>
+  print &quot;Cancelado&quot
+</pre>
+                    <p>agora com grupos</p>
+                    <pre class="prettyprint" data-lang="python">
+# -*- coding: cp1252 -*-
+<b>nomes = []</b>
+while len(nomes) &lt; 3:
+    nome = raw_input(&quot;informe o nome do &quot;+str(<b>len(nomes)</b>+1)+&quot;°  integrante: &quot;)
+    if nome:
+        <b>nomes.append(nome)</b>
+    else:
+        print &quot;tente nomamente&quot;
 
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
+print <b>&quot;Olá %s, %s e %s&quot; % (nomes[0], nomes[1], nomes[2])</b></pre>
+                </article>
+            </slide>
+            <slide class="segue dark nobackground">
+                <aside class="gdbar"><img src="images/jogodavelha_icon.png"></aside>
+                <hgroup class="auto-fadein">
+                    <h2>Jogo da Velha</h2>
+                    <h3>(Desafio)</h3>
+                </hgroup>
+            </slide>
+            
+            <slide>
+                <hgroup>                    
+                    <h2>Por que usar Python</h2>
+                    <h3>Indo um pouco mais a fundo</h3>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>Código legivel e curto</li>
+                        <li>Permite testes rapídos com o interpletador interativo</li>
+                        <li>Grande base de bibliotecas externas (<a href="http://www.numpy.org">Numpy</a>, <a href="https://www.djangoproject.com">Django</a>)</li>
+                        <li>Multiplataforma</li>
+                        <li>Tudo pode</li>
+                        <li>Camandos help() e dir()</li>
+                    </ul>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Variaveis</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>Tipagem dinamica e forte</li>
+                    </ul>
+                    <pre class="prettyprint" data-lang="python">
+var = None
+print &quot;var = &quot;+str(var)+&quot; | &quot;+str(type(var))
+var = 3
+print &quot;var = &quot;+str(var)+&quot; | &quot;+str(type(var))
+var = &quot;Brasil&quot;
+print &quot;var = &quot;+str(var)+&quot; | &quot;+str(type(var))
+var = [&quot;Equador&quot;, &quot;Chile&quot;]
+print &quot;var = &quot;+str(var)+&quot; | &quot;+str(type(var))
+</pre>
+                    <ul>
+                        <li>Não é necessario declarar</li>
+                        <li>Nomeadas apenas com letras numeros e _ (não é premitido caracteres acentuados nem começar com numeros)</li>
+                        <li>Diferencia maiúscula de minúscula</li>
+                    </ul>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Listas</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>Lista (list, [])</li>
+                        <li>Tupla (tuple, ())</li>
+                        <li>Dicionario (dict, {})</li>
+                    </ul>
+                    <pre class="prettyprint" data-lang="python">
+lista = [1,"2", 3.0, 4L]
+print "lista[1]", lista[1], "lista[1:2:2]", lista[0:3: 2]
+lista[1:3] = ["oi", "ola"]
+print lista
+tupla = (1, "2", 3.0, 4L)
+print "tupla[1]", tupla[1], "tupla[1:2:2]", tupla[0:3: 2]
+#tupla[1] = "bah" #erro
+print tupla
+dicionario = {"nome": "victor", "idade": 19}
+print dicionario
+print "nome", dicionario["nome"]
+dicionario["idade"] = 20
+print dicionario
+</pre>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Operadores</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li><b>Aritméticos:</b> + (adição), - (subtração),<br>
+                            * (multiplicação), / (divisão), ** (exponenciação), % (módulo)</li>
+                        <li><b>Comparação:</b> == (igual), != (diferente), < (menor), > (maior),<br>
+                            <= (menor ou igual), >= (maior ou igual), in (esta contido)</li>
+                        <li><b>Lógicos:</b> and (e), or, (ou), not (negação)</li>
+                        <li><b>Formatação de string:</b> % (ex.: "meu nome é %s" % "victor") (<a href="http://docs.python.org/2/library/string.html#format-specification-mini-language">doc</a>)</li>
+                        <li><b>bit-wise: </b> & (end), | (or) &gt;&gt; (right shift), &lt;&lt; (left shift)</li>
+                    </ul>
+                    <pre class="prettyprint" data-lang="python">
+print (2+2**2*3)/2
+print 1 < 2, 1 > 2, 1 == 2, 1 != 2, 1 <= 2, 1 >=2
+print True and False, True or False, not False
+print 1**2 < 2**2 and 2**2 < 3**2
+print 1**2 < 2**2 < 3**2 # igual ao anterior
+print "o %s vai custar R$ %.2f" % ("PS4", 3999.509)
+print bin(0b1 << 2)
+</pre>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Arquivos</h2>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+a = open(__file__, "r")
+conteudo = a.read()
+a.close()
+novo = open("copia.py", "w")
+novo.write(conteudo)
 
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
+from datetime import datetime
+from random import random
+from os import linesep
 
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
+with open("arquivo_alearorio.txt", "a") as arquivo:
+  arquivo.write(str(datetime.now())+": "+str(random())+linesep)
 
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
+</pre>
+                </article>
+            
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Estruturas de Controle</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>if (..): [...] elif(..): [...] else: [...] </li>
+                        <li>while(..): [...] else: [...]</li>
+                        <li>for (val) in (list): [...] else: [...] </li>
+                        <li>try: [...] except (type), (var): [...] else: [...] finally: [...]</li>
+                    </ul>
+                    <pre class="prettyprint" data-lang="python">
+n1 = raw_input("informe um numero inteiro: ")
+n2 = raw_input("informe um outro numero racional: ")
+try:
+   n1 = int(n1)
+except ValueError:
+   print "nao eh um numero inteiro"
+else:
+   try:
+        n2 = float(n2)
+        print "n1/n2", n1/n2
+   except ValueError:
+        print "nao eh um numero racional"
+</pre>
+                </article>
+            </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
+            <slide>
+                <hgroup>
+                    <h2>Funções<h2>
+                </hgroup>
+                <article>
+            <pre class="prettyprint" data-lang="python">
+def ehNatural(num, incluiZero=True):
+    if int(num) != num:
+        return False
+    if incluiZero:
+        return num >= 0
+    else:
+        return num > 0
 
-  <slide>
-    <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
+print "10.5 eh natural? ", ehNatural(10.5)
+print "0 eh natural sem o zero?", ehNatural(0, False)
+print "0 eh natural com o zero?", ehNatural(0, True)
+print "-1 eh natural sem o zero?", ehNatural(incluiZero=False, num=-1) 
+print "5 eh natural com o zero?", ehNatural(5) 
 
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
-    </article>
-  </slide>
+</pre>                    
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Escopo</h2>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+def print_x():
+    print x
 
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
+def modifica_x(para=1):
+    x=para
 
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
+x = 10
+print_x()
+modifica_x(para=5)
+print_x()</pre>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Import</h2>
+                    <h3>usando coisas de fora</h3>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+import math
+print math.factorial(10)
+print math.radians(180)
 
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <q>
-        This is an example of quote text.
-      </q>
-      <div class="author">
-        Name<br>
-        Company
-      </div>
-    </article>
-  </slide>
+from time import sleep
+sleep(10)
 
-  <slide>
-    <hgroup>
-      <h2>Slide with Iframe</h2>
-    </hgroup>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
-    </article>
-  </slide>
+import sys
+print sys.argv
 
-  <slide>
-    <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
-    </article>
-  </slide>
+from random import randint
+randint(1,10)
 
-  <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
-    </article>
-    <p class="auto-fadein" data-config-contact>
-      <!-- populated from slide_config.json -->
-    </p>
-  </slide>
+from string import lower
+lower("oi")
+</pre>
+                
+                </article>
+            </slide>
+            
+            <slide class="segue dark nobackground">
+                <aside class="gdbar"><img src="images/jogodavelha_icon.png"></aside>
+                <hgroup class="auto-fadein">
+                    <h2>Jogo da Velha</h2>
+                    <h3>(agora mais completo)</h3>
+                </hgroup>
+            </slide>
+                    
+            <slide>
+                <article class="flexbox vleft">
+                    <h2>Orientação a objetos</h2>
+                    <h3>mudando a forma de pensar</h3>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Exemplo</h2>
+                    <h3>classes, objetos, metodos e atributos </h3>
+                </hgroup>
+                <article class=" smaller">
+                    <pre class="prettyprint" data-lang="python">
+# -*- coding: UTF-8 -*-
+<b>class Retangulo:</b>
+    <b>def __init__(self, lado_a, lado_b):</b>
+        <b>self.lado_a</b> = lado_a
+        self.lado_b = lado_b
+        
+    <b>def desenha(self):</b>
+        print "┌"+"─"*(self.lado_a*3)+"┐"
+        for i in range(self.lado_b):
+            print "│"+" "*(self.lado_a*3)+"│"
+        print "└"+"─"*(self.lado_a*3)+"┘"
 
-  <slide class="logoslide dark nobackground">
-    <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
-    </article>
-  </slide>
+if __name__ == "__main__":      
+    r1 = Retangulo(2,2)
+    r2 = <b>Retangulo(3,2)</b>
 
-  <slide class="backdrop"></slide>
+    <b>r1.desenha()</b>
+    r2.desenha()
+else:
+    print "modulo "+__name__+" que contem Retangulo foi importado"
+</pre>
+                    <a class="source" href="http://en.wikipedia.org/wiki/Box-drawing_character">Box-drawing_character</a>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Exemplo</h2>
+                    <h3>herança</h3>
+                </hgroup>
+                <article class="smaller">
+                    <pre class="prettyprint" data-lang="python">
+<b>from exemplo_10_part_1 import Retangulo</b>
 
-</slides>
+class Quadrado <b>(Retangulo)</b>:
+    def __init__(self, tamanho):
+        Retangulo.__init__(self, tamanho, tamanho)
+        
+    def troca_tamanho(self, para):
+        self.lado_a = para
+        self.lado_b = para
+        
+if __name__ == "__main__":
+    q = Quadrado(10)
+    <b>q.desenha()</b>
+    <b>q.troca_tamanho(5)</b>
+    q.desenha()
+    
+    r = Retangulo(3,1)
+    r.desenha()
+    #r.troca_tamanho(5) #erro
+</pre>
+                </article>
+            </slide>
+                    
+            <slide>
+                <hgroup>
+                    <h2>Methodos interesantes</h2>
+                </hgroup>
+                <article>
+                    <ul>isinstance(obj, class)</ul>
+                    <ul>issubclass(class_para_vericar, posivelsubclass)</ul>
+                    <ul>is [operador]</ul>
+                </article>
+            </slide>
+            
+            <slide>
+                <hgroup>
+                    <h2>Exercícios</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>Faça um Programa que peça dois números e imprima a soma.</li>
+                        <li>Faça um Programa que pergunte quanto se deseja sacar e retorne
+                            quanto de cada nota (1, 2, 5, 10, 20, 50 e 100) deve-se receber
+                            para que se receba o menor numero de notas possível</li>
+                        <li>Faça um Programa que peça os 3 lados de um triângulo. O programa
+                            deverá informar se os valores podem ser um triângulo. Indique,
+                            caso os lados formem um triângulo, se o mesmo é: equilátero,
+                            isósceles ou escaleno.</li>
+                        <li>A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,...
+                            Faça um programa capaz de gerar a série até o n−ésimo termo.</li>
+                        <li>Faça uma função que simule um lançamento de dados. Esta deve receber
+                            um parametro que indica quantos dados seram utilisados (1 por padrão)
+                            retornando uma lista dos valores sorteados. DICA: use
+                            "import random / random.randint(...)"</li>
+                    </ul>
+                </article>
+            </slide>
+                    
+            <slide>
+                <hgroup>
+                    <h2>Exercícios</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li>Desenvolva um jogo da forca. O programa terá uma lista de palavras
+                            lidas de um arquivo texto e escolherá uma aleatoriamente. O jogador
+                            poderá errar 6 vezes antes de ser enforcado.</li>
+                        <li>Crie uma classe figura geometrica e mais duas que herdem dela.
+                            Todas devem saber calcular sua area e o seu perímetro</li>
+                    </ul>
+                </article>
+            </slide>
+                    
+            <slide>
+                <hgroup>
+                    <h2>Algumas firulas do python</h2>
+                </hgroup>
+                <article class="smaller">
+                    <ul>
+                        <li>numeros complexos nativos</li>
+                        <li>retorno multiplo</li>
+                        <li>associando mais de uma variavel de uma só vez</li>
+                        <li>execução dependente</li>
+                        <li>lista tupla como parametro</li>
+                    </ul>
+                    <pre class="prettyprint" data-lang="python">
+c = 10+3j           #complexo
+print c.conjugate() #
+def toPmAm(time):            #
+    if not 0 <= time < 24:   #
+        return None          #
+    if time > 12:            #
+        return time-12, "PM" # multiplo retorno
+    else:                    #  
+        return time, "AM"    #
 
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
+def printTime(time, turno):
+    print str(time)+":00"+turno
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
+t1,t2 = 10,50   # asociação multipla
 
-<!--[if IE]>
-  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
-  <script>CFInstall.check({mode: 'overlay'});</script>
+toPmAm(t1) and printTime(*toPmAm(t1)) #execução dependente
+toPmAm(t2) and printTime(*toPmAm(t2)) #lista/tupla como parametro
+</pre>
+                </article>
+            </slide>
+                    
+            <slide>
+                <hgroup>
+                    <h2>Um pouco de thread</h2>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+# -*- coding: utf-8 -*-
+from threading import Thread
+
+class Concorente(Thread):
+    def __init__(self, nome):
+        Thread.__init__(self)
+        self.nome = nome
+        
+    def run(self):
+        for i in range(10):
+            print self.nome +": "+str(i)
+
+c1 = Concorente("c1")
+c2 = Concorente("c2")
+c1.start()
+c2.start()
+</pre>
+                </article>
+            </slide>
+                    
+            <slide>
+                <hgroup>
+                    <h2>Um pouco de Socket</h2>
+                    <h3>Servidor</h3>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+import socket
+
+BLIND = ("", 3000)
+servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+servidor.bind(BLIND)
+servidor.listen(1)
+print "aguardando cliente.."
+cliente, endereco = servidor.accept()
+print "conectado com ", endereco
+print "ele enviou:", cliente.recv(1024)
+print "respondendo oi"
+cliente.send("oi")
+cliente.close()
+servidor.close()
+</pre>
+                </article>
+            </slide>    
+            
+            <slide>
+                <hgroup>
+                    <h2>Um pouco de Socket</h2>
+                    <h3>Cliente</h3>
+                </hgroup>
+                <article>
+                    <pre class="prettyprint" data-lang="python">
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect(('localhost', 3000))
+print "envinado ola"
+s.send("ola")
+print "lendo "+s.recv(1024)
+s.close()
+</pre>
+                </article>
+            </slide>        
+            
+            <slide>
+                <hgroup>
+                    <h2>Links importantes</h2>
+                </hgroup>
+                <article>
+                    <ul>
+                        <li><a href="http://docs.python.org/2.7/">Ducumentação oficial</a></li>
+                        <li><a href="http://www.async.com.br/projects/python/pnp/">Um bom tutorial em portugues</a></li>
+                        <li><a href="http://pythontutor.com/">Vendo o python funcionar</a></li>
+                    </ul>
+                </article>
+            </slide>
+            
+            <slide class="thank-you-slide segue nobackground">
+                <article class="flexbox vleft auto-fadein">
+                    <h2>&lt;Obrigado!&gt;</h2>
+                    <p>email: <a class="white" href="mailto://ds.victor94@gmail.com">ds.victor94@gmail.com</a></p>
+                </article>
+            </slide>
+            
+            <slide class="logoslide nobackground">
+                <article class="flexbox vcenter">
+                    <span><img src="images/python-programming-language-logo.png"></span>
+                </article>
+            </slide>
+            
+            <slide class="backdrop"></slide>
+            
+        </slides>
+        <!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+<script>CFInstall.check({mode: 'overlay'});</script>
 <![endif]-->
-</body>
+    </body>
 </html>
